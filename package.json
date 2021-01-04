@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "dotenv": "^16.4.7"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none",
+    "semi": false
   }
 }
