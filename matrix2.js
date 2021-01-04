@@ -38,12 +38,6 @@ function generateCommitDates(year, text, fillBackground) {
   const rows = 7 // Sunday-Saturday
   const maxLength = Math.floor(totalColumns / 6) // Fit 6 columns per character
   const truncatedText = text.slice(0, maxLength)
-  console.log('totalDaysInYear', {
-    totalColumns,
-    rows,
-    maxLength,
-    truncatedText
-  })
 
   const matrixStartRow = 1 // Start rendering from the 2nd row (align text vertically)
 
@@ -74,8 +68,6 @@ function generateCommitDates(year, text, fillBackground) {
           commitDates.push(date.toISOString().split('T')[0]) // Add date in YYYY-MM-DD format
         }
       }
-
-      console.log('commitDates', commitDates.sort())
     })
   })
 
