@@ -30,6 +30,7 @@ function getLastSaturday(year) {
 }
 
 function generateCommitDates(year, text, fillBackground) {
+  // TODO: Add support for fillBackground
   const firstSunday = getFirstSunday(year)
   const lastSaturday = getLastSaturday(year)
   const totalColumns = Math.ceil(
